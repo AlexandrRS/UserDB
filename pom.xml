@@ -5,16 +5,12 @@
 	<artifactId>UsersDB</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<properties>
 		<hibernate.version>4.2.0.Final</hibernate.version>
 		<mysql.connector.version>5.1.21</mysql.connector.version>
 		<spring.version>3.2.2.RELEASE</spring.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
-
-
 	<dependencies>
 		<!-- DB related dependencies -->
 		<dependency>
@@ -102,7 +98,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<repositories>
 		<repository>
 			<id>spring-maven-milestone</id>
@@ -110,7 +105,6 @@
 			<url>http://maven.springframework.org/milestone</url>
 		</repository>
 	</repositories>
-
 	<build>
 		<finalName>AlexandrRS-UserDB</finalName>
 		<plugins>
@@ -122,24 +116,6 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <path>/userdb</path>
-                    <url>http://localhost:8080/manager/text</url>
-                </configuration>
-            </plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>users</id>
-			<name>Users repo</name>
-			<url>https://github.com/AlexandrRS/users.git</url>
-			<layout>default</layout>
-		</repository>
-	</distributionManagement>
 </project>

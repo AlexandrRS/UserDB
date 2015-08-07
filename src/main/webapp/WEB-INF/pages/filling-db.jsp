@@ -10,7 +10,7 @@
     <body>
         <p><a href="${pageContext.request.contextPath}/index.html">Home page</a></p>
         <h1>Filling DB</h1>
-        <p>You database will be filled by 50 fake users</p>
+        <p>You database will be filled by some fake users</p>
         <a href="${pageContext.request.contextPath}/fill.html">fill DB</a>
     </body>
 </html>

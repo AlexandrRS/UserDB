@@ -6,12 +6,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-        <title>Add team page</title>
+        <title>Add user page</title>
     </head>
     <body>
         <p><a href="${pageContext.request.contextPath}/list/page1.html&filter=">List of Users</a> | <a href="${pageContext.request.contextPath}/index.html">Home page</a></p>
         <h1>Add user page</h1>
-        <p>Here you can add a new user.</p>
+        <p>Fill form and press add</p>
         <form:form method="POST" commandName="filter" action="${pageContext.request.contextPath}/add.html">
             <table>
                 <tbody>
@@ -28,7 +28,7 @@
                         <td><form:checkbox path="isAdmin" /></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" value="Add" /></td>
+                        <td><input type="submit" value="add" /></td>
                         <td></td>
                     </tr>
                 </tbody>

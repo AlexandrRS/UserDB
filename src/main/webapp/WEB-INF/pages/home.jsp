@@ -10,8 +10,8 @@
 <h1>Test task "User management" by AlexandrRS</h1>
 <p>
 ${message}<br/>
-<a href="${pageContext.request.contextPath}/list/page1.html&filter=">user management</a><br/>
-<a href="${pageContext.request.contextPath}/filling-db.html">filling user database</a><br/>
+<a href="${pageContext.request.contextPath}/list/page1.html&filter=">User management</a><br/>
+<a href="${pageContext.request.contextPath}/filling-db.html">Filling user database</a><br/>
 </p>
 </body>
 </html>
